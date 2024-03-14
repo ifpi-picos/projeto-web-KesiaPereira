@@ -3,20 +3,57 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="css/main.css">
 
-      <title>Responsive bakery website - Bedimcode</title>
+      <title>Pão de Casa</title>
    </head>
    <body>
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="#" class="navlogo">Pão de Casa</a>
+            <div class="navmenu" id="navmenu">
+                <ul class="navlista">
+                    <li class="navitem">
+                        <a href="#home" class="navlink">Início</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#new" class="navlink">Novidades</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#about" class="navlink">Sobre Nós</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#favorite" class="navlink">Favoritos</a>
+                    </li>
+                    <li class="navitem">
+                        <a href="#visit" class="navlink">Localização</a>
+                    </li>
+                </ul>
+                <div class="navfechar" id="navfechar">
+                    <i class="ri-close-circle-line"></i>
+                </div>
+                <img src= "img/bread-4.png" alt="imagem" class="navimg1">
+                <img src= "img/bread-1.png" alt="imagem" class="navimg2">
+            </div>
+
+            <div class="navativar" id="navativar">
+                <i class="ri-menu-line"></i>
+            </div>
+         </nav>
       </header>
 
       <main class="main">
          <section class="home section" id="home">
-            
+            <img src="img/home-bg.jpg" alt="image" class="iniciobg">
+            <div class="iniciosombra"></div>
+            <div class="iniciocontainer container grid">
+                <div class="iniciodados">
+                    <h1 class="iniciotitulo">Escolha os pães de melhor qualidade!</h1>
+                    <a href="#" class="button">Pães Disponíveis</a>
+                </div>
+            </div>
          </section>
 
          <section class="new section" id="new">
@@ -41,7 +78,7 @@
       </footer>
 
       <script src=""></script>
-      
-      <script src="assets/js/main.js"></script>
+
+      <script src="js/main.js"></script>
    </body>
 </html>

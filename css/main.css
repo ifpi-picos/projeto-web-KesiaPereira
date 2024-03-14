@@ -75,3 +75,91 @@ img {
 .main {
     overflow: hidden;
 }
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    transition: color .4s;
+}
+
+.navlogo:hover {
+    color: var(--primary-color-alt);
+}
+
+.navativar, .navfechar {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px){
+    .navmenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: rgb(3, 3, 3, 0.2);
+        backdrop-filter: blur(16px);
+        width: 80%;  
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right .4s;
+    }
+}
+
+.navlista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.navlink {
+    color: var(--title-color);
+    font-weight: 600;
+    transition: color .4s;
+}
+
+.navlink:hover {
+    color: var(--primary-color);
+}
+
+.navfechar, .navimg1, .navimg2 {
+    position: absolute;
+}
+
+.navfechar {
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.navimg1 {
+    width: 80px;
+    top: 11rem;
+    right: .75rem;
+}
+
+.navimg2 {
+    width: 60px;
+    top: 28rem;
+    left: 6rem;
+}
+
+.mostrarmenu {
+    right: 0;
+}
