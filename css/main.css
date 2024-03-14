@@ -52,3 +52,26 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section_title {
+    font-size: 3rem;
+    font-family: "Didact Gothic";
+}
+
+.main {
+    overflow: hidden;
+}
