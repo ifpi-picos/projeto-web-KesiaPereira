@@ -2,15 +2,13 @@
 
 :root {
     --header-height: 3.5rem;
-    --primary-color: rgb(255, 147, 241);
+    --primary-color: rgb(236, 80, 216);
     --primary-color-alt: rgb(233, 47, 87);
     --title-color: rgb(255, 212, 199);
-    --text-color: rgb(240, 198, 198);
-    --text-color-light: rgb(255, 223, 223);
-    --body-color: rgb(34, 2, 27);
-    --container-color: rgb(61, 49, 58);
-    --black: rgb(3, 3, 3);
-    --white: rgb(255, 255, 255);
+    --text-color: rgb(255, 192, 192);
+    --text-color-light: rgb(255, 240, 240);
+    --body-color: rgb(19, 19, 19);
+    --container-color: rgb(27, 27, 27);
 }
 
 * {
@@ -81,7 +79,8 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: rgb(3, 3, 3, 0.2);
+    backdrop-filter: blur(16px);
     z-index: 100;
 }
 
@@ -162,18 +161,6 @@ img {
 
 .mostrarmenu {
     right: 0;
-}
-
-.blurheader::after {
-    content: " ";
-    position: absolute;
-    width: 1000%;
-    height: 100%;
-    background-color: rgb(3, 3, 3, 0.2);
-    backdrop-filter: blur(16px);
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 .home {
