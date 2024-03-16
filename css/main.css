@@ -392,3 +392,37 @@ img {
 .favoritoscard:hover {
     border-color: var(--primary-color);
 }
+
+.localcontainer {
+    position: relative;
+    padding-block: 3rem;
+}
+
+.localbg, .localsombra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.localbg {
+    object-fit: cover;
+    object-position: center;
+}
+
+.localsombra {
+    background: linear-gradient(180deg, hsl(0, 0%, 6%) 0%, hsla(0, 0%, 4%, .1) 50%, hsl(0, 0%, 6%) 100%);
+
+}
+
+.localdados {
+    text-align: center;
+}
+
+.localdescricao {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 3rem;
+}
