@@ -317,3 +317,27 @@ img {
     justify-self: center;
 }
 
+.sobrecontainer {
+    row-gap: 4rem;
+}
+
+.aboutdados {
+    position: relative;
+    text-align: center;
+}
+
+.sobredescricao {
+    margin-bottom: 3rem;
+}
+
+.sobrepao {
+    width: 60px;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+}
+
+.sobreimg {
+    width: 320px;
+    justify-self: center;
+}
