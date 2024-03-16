@@ -426,3 +426,134 @@ img {
     color: var(--title-color);
     margin-bottom: 3rem;
 }
+
+.footer {
+    padding-block: 3rem 2rem;
+}
+
+.footercontainer {
+    position: relative;
+    row-gap: 4rem;
+}
+
+.footerlogo {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    transition: color .4s;
+}
+
+.footerlogo:hover{
+    color: var(--primary-color-alt);
+}
+
+.footerconteudo {
+    grid-template-columns: repeat(2, max-content);
+    gap: 4rem 2rem;
+}
+
+.footertitulo {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.footerlista {
+    display: grid;
+    row-gap: .75rem;
+}
+
+.footerinformacao {
+    font-style: normal;
+}
+
+.footersocial {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footersocial a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: color .4s;
+}
+
+.footersocial a:hover {
+    color: var(--primary-color);
+}
+
+.footerimg1, .footerimg2 {
+    position: absolute;
+}
+
+.footerimg1 {
+    width: 60px;
+    top: 2.5rem;
+    right: 1.5rem;
+}
+
+.footerimg2 {
+    width: 70px;
+    top: 17rem;
+    left: 9rem;
+}
+
+.footercopia {
+    display: block;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: .875rem;
+}
+
+::-webkit-scrollbar{
+    width: .6rem;
+    background-color: hsl(28, 12%, 15%);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: hsl(28, 12%, 25%);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(28, 12%, 35%);
+}
+
+@media screen and (max-width: 340px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .iniciotitulo {
+        font-size: 2.5rem;
+    }
+
+    .iniciofooter {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .novidadesconteudo {
+        grid-template-columns: 200px;
+        justify-content: center;
+    }
+
+    .novidadescard {
+        flex-direction: column;
+        row-gap: 1rem;
+        text-align: center;
+    }
+
+    .novidadescard:nth-child(2) img {
+        order: initial;
+    }
+
+    .favoritoscontainer {
+        grid-template-columns: 180px;
+        justify-content: center;
+    }
+
+    .footerconteudo {
+        grid-template-columns: max-content;
+    }
+}
+
