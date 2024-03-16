@@ -321,7 +321,7 @@ img {
     row-gap: 4rem;
 }
 
-.aboutdados {
+.sobredados {
     position: relative;
     text-align: center;
 }
@@ -340,4 +340,55 @@ img {
 .sobreimg {
     width: 320px;
     justify-self: center;
+}
+
+.favoritoscontainer {
+    padding-top: 3.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 1.5rem;
+}
+
+.favoritoscard {
+    position: relative;
+    background-color: var(--container-color);
+    box-shadow: 0 12px 24px hsla(0, 0%, 0%, .3);
+    padding: 6.5rem 1rem 1.25rem;
+    border: 2px solid transparent;
+    transition: border-color .4s;
+}
+
+.favoritosimg {
+    width: 120px;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.favoritostitulo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.favoritossubtitulo {
+    display: block;
+    margin-bottom: .75rem;
+}
+
+.favoritospreco {
+    font-size: 1rem;
+}
+
+.favoritosbutton {
+    padding: .25rem;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.favoritoscard:hover {
+    border-color: var(--primary-color);
 }
