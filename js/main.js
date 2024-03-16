@@ -19,3 +19,5 @@ if(navFechar){
 const LinkAcao = () => {
     navMenu.classList.remove("mostrarmenu");
 }
+
+navLink.forEach(n => n.addEventListener("click", LinkAcao));

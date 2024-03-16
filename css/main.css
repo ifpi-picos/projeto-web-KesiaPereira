@@ -68,6 +68,7 @@ img {
 .section_title {
     font-size: 3rem;
     font-family: "Didact Gothic";
+    text-align: center;
 }
 
 .main {
@@ -79,8 +80,7 @@ img {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(3, 3, 3, 0.2);
-    backdrop-filter: blur(16px);
+    background-color: rgba(3, 3, 3, 0.4);
     z-index: 100;
 }
 
@@ -113,7 +113,7 @@ img {
         position: fixed;
         top: 0;
         right: -100%;
-        background-color: rgb(3, 3, 3, 0.2);
+        background-color: rgb(3, 3, 3, 0.4);
         backdrop-filter: blur(16px);
         width: 80%;  
         height: 100%;
